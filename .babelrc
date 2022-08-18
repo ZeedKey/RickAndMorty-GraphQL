@@ -1,0 +1,15 @@
+{
+    "plugins": [
+      ["module-resolver", {
+        "alias": {
+            "@common": "./src/common",
+            "@layouts": "./src/layouts",
+            "@pages": "./src/pages",
+            "@schemas": "./src/schemas",
+            "@styles": "./src/styles",
+            "@types": "./src/types",
+            "@utils": "./src/utils"
+        }
+      }]
+    ]
+  }
