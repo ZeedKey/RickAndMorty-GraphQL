@@ -1,0 +1,20 @@
+@import '../../styles/library';
+
+.nav{
+    &__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    &__icon{
+        margin-right: 12px;
+    }
+    &__label{
+        font-family: Karla;
+        font-weight: 700;
+        font-size: $size-rg-2;
+    }
+}
