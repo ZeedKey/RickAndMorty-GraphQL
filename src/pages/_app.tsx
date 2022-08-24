@@ -33,7 +33,7 @@ const cache = new InMemoryCache({
 })
 
 const client = new ApolloClient({
-    uri: 'https://rickandmortyapi.com/graphql',
+    uri: `${process.env.NEXT_PUBLIC_API_URL}`,
     cache: cache,
 })
 
