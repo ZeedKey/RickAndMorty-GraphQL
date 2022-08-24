@@ -1,0 +1,58 @@
+@import "../../styles/library";
+
+.card {
+  background: $color-bright-3;
+  box-shadow: $card-box-shadow;
+  border-radius: 4px;
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+  }
+
+  &__icon {
+    position: relative;
+    width: 100%;
+    min-height: 232px;
+  }
+
+  &__title {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: $size-rg-3;
+    letter-spacing: 0.15px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 60%;
+    text-overflow: ellipsis;
+  }
+  &__subtitle {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: $size-sm-4;
+    letter-spacing: 0.25px;
+    opacity: 0.6;
+    margin-top: 1px;
+  }
+  &__caption {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: $size-sm-4;
+    letter-spacing: 0.25px;
+    opacity: 0.6;
+    margin-top: 5px;
+  }
+}
+
+.episode_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.character_card{
+
+}
