@@ -1,0 +1,40 @@
+@import '../../styles/mixins';
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filters{
+    margin-bottom: 65px;
+    width: 500px;
+    @include onLaptop(width, 100%);
+    @include onLaptop(margin-bottom, 48px);
+}
+
+.banner {
+  position: relative;
+  width: 40vmax;
+  height: 30vmin;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.episodes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-auto-rows: 128px;
+    row-gap: 24px;
+    column-gap: 20px;
+    min-height: 25vmin;
+}
+
+.button {
+    width: 154px;
+    height: 36px;
+    margin-top: 46px;
+    margin-bottom: 27px;
+    @include onMobile(margin, 36px 0 100px 0);
+}
