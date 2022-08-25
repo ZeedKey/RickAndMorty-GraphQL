@@ -1,5 +1,5 @@
 export const ROUTES: Routes.RouteType[] = [
-    { name: 'Characters', path: '/characters' },
-    { name: 'Locations', path: '/locations' },
+    { name: 'Characters', path: '#' },
+    { name: 'Locations', path: '#' },
     { name: 'Episodes', path: '/episodes' },
 ]
