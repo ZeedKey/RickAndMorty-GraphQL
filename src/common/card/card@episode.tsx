@@ -1,5 +1,5 @@
 import React from 'react'
-import { Episode } from '../../schemas/generated/graphql'
+import { Episode } from '@schemas/generated/graphql'
 import styles from './card.module.scss'
 
 type EpisodesCardProps = Episode & {

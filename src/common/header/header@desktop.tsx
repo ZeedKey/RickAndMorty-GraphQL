@@ -13,7 +13,7 @@ const RenderMenuLink = (route: Routes.RouteType) => (
 
 export const DesktopHeader: React.FC = () => {
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} ${styles.header_desktop}`}>
             <nav className={styles.navbar}>
                 <figure>
                     <LogoIcon />
