@@ -1,0 +1,41 @@
+@mixin onDesktop($property, $value) {
+    @media (max-width: 1281px) {
+        #{$property}: $value;
+    }
+}
+@mixin onLaptop($property, $value) {
+    @media (max-width: 1025px) {
+        #{$property}: $value;
+    }
+}
+@mixin onTablet($property, $value) {
+    @media (max-width: 801px) {
+        #{$property}: $value;
+    }
+}
+@mixin onMobile($property, $value) {
+    @media (max-width: 600px) {
+        #{$property}: $value;
+    }
+}
+@mixin onMobileSmall($property, $value) {
+    @media (max-width: 321px) {
+        #{$property}: $value;
+    }
+}
+
+@mixin onLoading($property, $value) {
+
+    @keyframes skeleton-loading {
+        0% {
+            background-color: hsl(200, 20%, 70%);
+        }
+        100% {
+            background-color: hsl(200, 20%, 95%);
+        }
+    }
+    #{$property}: $value;
+    animation: skeleton-loading 1s linear infinite alternate;
+    background-color: gray;
+    border-radius: 90px;
+}

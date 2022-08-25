@@ -1,0 +1,33 @@
+@import '../../styles/library';
+
+.button {
+    border: none;
+    background: $color-bright-2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all;
+
+    box-shadow: $button-box-shadow;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &__label {
+        font-family: 'Roboto Medium';
+        text-transform: uppercase;
+        color: $color-blue-1;
+        letter-spacing: 1.25px;
+        font-size: $size-sm-4;
+    }
+
+    &:disabled{
+      opacity: 0.5;
+    }
+}
+
+.button_disabled {
+  display: none !important;
+    background: $color-gray-1 !important;
+}

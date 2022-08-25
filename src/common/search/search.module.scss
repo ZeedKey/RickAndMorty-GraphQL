@@ -1,0 +1,19 @@
+.search {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 16px;
+
+  input:placeholder-shown {
+    text-overflow: ellipsis;
+  }
+
+  &__field {
+    border: none;
+    background-color: none;
+    width: 100%;
+  }
+  &__icon {
+    margin-right: 11.51px;
+  }
+}

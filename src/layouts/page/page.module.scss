@@ -1,0 +1,24 @@
+@import '../../styles/mixins';
+@import '../../styles/library';
+
+.layout {
+    display: grid;
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas: 'header' 'content' 'footer';
+    height: 100%;
+
+    header,
+    main,
+    footer {
+        grid-area: footer;
+        padding: 0 210px;
+        @include onLaptop(padding, 0 24px);
+    }
+    header {
+        grid-area: header;
+        box-shadow: $layout-box-shadow;
+    }
+    main {
+        grid-area: content;
+    }
+}

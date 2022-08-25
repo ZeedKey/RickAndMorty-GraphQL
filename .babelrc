@@ -1,4 +1,5 @@
 {
+  "presets": ["next/babel"],
     "plugins": [
       ["module-resolver", {
         "alias": {
@@ -8,7 +9,10 @@
             "@schemas": "./src/schemas",
             "@styles": "./src/styles",
             "@types": "./src/types",
-            "@utils": "./src/utils"
+            "@utils": "./src/utils",
+            "@routes": "./src/routes",
+            "@icons": "./src/icons",
+            "@hooks": "./src/hooks"
         }
       }]
     ]

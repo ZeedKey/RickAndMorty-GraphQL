@@ -19,10 +19,13 @@
       "@common": ["./src/common"],
       "@layouts": ["./src/layouts"],
       "@pages": ["./src/pages"],
-      "@schemas": ["./src/schemas"],
+      "@schemas/*": ["./src/schemas/*"],
       "@styles": ["./src/styles"],
       "@types": ["./src/types"],
-      "@utils": ["./src/utils"]
+      "@utils": ["./src/utils"],
+      "@routes": ["./src/routes"],
+      "@hooks": ["./src/hooks"],
+      "@icons": ["./src/icons"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
