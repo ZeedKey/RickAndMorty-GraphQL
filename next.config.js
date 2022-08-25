@@ -13,12 +13,10 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/episodes/:slug([*^d*])',
+        source: '/episodes/:slug(\\D{1,})',
         destination: '/episodes',
         permanent: true,
       },
-
-      //  TODO: ...OTHER ROUTES REDIRECTION IMPLEMENTATION
     ]
   }
 }
